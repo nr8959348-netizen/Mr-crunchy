@@ -1,47 +1,158 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mr Crunchy</title>
+  <title>Mr Crunchy Pani Puri</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
-      font-family: Arial;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #7b0f17;
+      color: white;
       text-align: center;
-      background-color: #f8f8f8;
     }
+
+    /* Discount Banner */
+    .offer-banner {
+      background: red;
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 18px;
+      animation: blink 1s infinite alternate;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      margin-right: 5px;
+    }
+
+    @keyframes blink {
+      from { opacity: 1; }
+      to { opacity: 0.6; }
+    }
+
+    header {
+      background: linear-gradient(to right, #ffcc00, #ff9900);
+      padding: 25px 15px;
+      color: #000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
     .container {
       padding: 20px;
     }
-    img {
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .gallery img {
       width: 250px;
       border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
     }
-    h1 {
-      color: #e67e22;
+
+    .price {
+      font-size: 24px;
+      margin: 15px 0;
+      color: #ffcc00;
+      font-weight: bold;
     }
+
     .btn {
       display: inline-block;
-      padding: 12px 20px;
+      padding: 14px 25px;
       background-color: #25D366;
       color: white;
       text-decoration: none;
       border-radius: 8px;
       font-size: 18px;
       margin-top: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #1ebe5d;
+      transform: scale(1.05);
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding: 15px;
+      background: #000;
+      font-size: 14px;
     }
   </style>
 </head>
+
 <body>
 
-<div class="container">
-  <h1>Mr Crunchy</h1>
-  <img src="YOUR-IMAGE-LINK-HERE" alt="Product Image">
-  <p>Delicious and crispy snacks for everyone.</p>
-  <h2>Price: ₹99</h2>
+  <!-- Discount Banner -->
+  <div class="offer-banner">
+    🎉 Special Offer – <span class="old-price">₹99</span> ₹79 Only! 🎉
+  </div>
 
-  <a class="btn" href="https://wa.me/917354261828">Order on WhatsApp</a>
-</div>
+  <header>
+    <h1>Mr Crunchy Pani Puri</h1>
+    <p>Ready To Eat – Anytime, Anywhere!</p>
+  </header>
+
+  <div class="container">
+
+    <div class="gallery">
+      <img src="IMAGE1-LINK">
+      <img src="IMAGE2-LINK">
+      <img src="IMAGE3-LINK">
+    </div>
+
+    <div class="price">
+      Now Only ₹79
+    </div>
+
+    <p>
+      Tasty & Crunchy Ready-to-Eat Pani Puri with Masala & Pouch Inside.
+      Perfect for Home, Parties & Events.
+    </p>
+
+    <a class="btn" href="https://wa.me/91YOURNUMBER">
+      Order Now on WhatsApp
+    </a>
+
+    <div class="section">
+      <h2>Product Highlights</h2>
+      <p>✔ Premium Quality</p>
+      <p>✔ Hygienic Packaging</p>
+      <p>✔ Masala & Pani Mix Included</p>
+      <p>✔ 30–35 Days Shelf Life</p>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 Mr Crunchy | All Rights Reserved
+  </footer>
 
 </body>
 </html>
+  
